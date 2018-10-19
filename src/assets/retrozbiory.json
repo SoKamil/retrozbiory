@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Płyta główna",  
+    "subtitle": "ZX Spectrum",
+    "extras": [
+      ["częstotliwość procesora - 3,5MHz"],
+      [" ","RAM 16-48KB"]
+    ],
+    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/zx_spectrum.png"],
+    "description": "Mikrokomputer domowy opracowany w firmie Sinclair Research. Oparty na 8 bitowym procesorze Zilog Z80A .Nośnikiem danych była kaseta magnetofonowa. System operacyjny opracowany przez Sinclaira. Obraz był wyświetlany w trybie graficznym w rozdzielczości 256 x 192 pixele w 15 kolorach.Możliwe było podłączenie dżojstika. Powstało wiele klonów tego mikrokomputera."
+  },
+  {
+    "title": "Komputer PC",
+    "subtitle": "MiniSys 286",
+    "extras": [
+      ["częstotliwość procesora - 12MHz"],
+      ["                              ", "Pamięć operacyjna - 512kB"]
+    ],
+    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/minisys_286.png"],
+    "description": "Miniaturowa wersja komputera PC XT 286 opartego na mikroprocesorze 16-bitowym Intel 80286. Wyposażony w stację dyskietek 3,5” o pojemności 1,44 MB oraz 3,5” dysk twardy o pojemności od 20 MB. Posiada kartę graficzną VGA pracującą w trybie mono lub kolor."
+  },
+  {
+    "title": "Stacja dyskietek",  
+    "subtitle": "3,5 cala FDD firmy ALPS",
+    "extras": [
+      ["produkowane od 1982 r."]
+    ],
+    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/stacja_dyskietek_35.png", "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Stacja-dyskietek-35-cala-z%C5%82%C4%85cze.png"],
+    "description":"Do odczytu dyskietek w sztywnej obudowie o pojemności początkowo 280 kB później 720 kB a końcowo 1,44 MB (najczęściej stosowane). Używa złącza IDE 32 piny" 
+  }, 
+   {
+     "title": "Dysk twardy",  
+     "subtitle": "5,25 cala HDD firmy WYSE",
+     "extras": [
+      ["pojemność - 45MB"]
+    ],
+    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/dysk_twardy_525.png"],
+    "description": "Dysk typu ST-251. Prędkość obrotowa 3600 rpm, 6-cio głowicowy. Złącze krawędziowe ISA"
+    }, 
+    {
+      "title": "Kaseta danych ",  
+      "subtitle": "Firmy Sony",
+      "extras": [
+        ["pojemność - 60MB"]
+      ],
+      "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/kaseta_sony.png"],
+      "description": "Nośnik danych na taśmie magnetycznej 0,25” o długości 183 m. Kaseta metalowo-plastikowa. Do zapisu i odczytu wymagała specjalnej stacji zwanej streamerem danych."
+    },
+    {
+      "title": "Kalkulator biurowy z drukarką",  
+      "subtitle": "Firmy Citizen",
+      "extras": [
+        ["wykonuje 4 podstawowe typy działań"],
+        [" ", "Pamięć operacyjna - 512kB"]
+      ],
+      "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/kalkulator_citizen.png"],
+      "description": "Kalkulator posiada 12-to pozycyjny wyświetlacz fluorescencyjny (VFD). To urządzenie jest w stanie wykonać 4 podstawowe typy działań oraz ma możliwość ustawiania dokładności obliczeń od 2-4 miejsc po przecinku."
+    },
+    {
+      "title": "Mikrokomputer domowy M5",  
+      "subtitle": "Firmy CGL",
+      "extras": [
+        ["Japoński klon ZX Spectrum"]
+      ],
+      "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Mikrokomputer-M5.png", "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/mikrokomputer_M5_kartridz.png"],
+      "description": "Programy i gry były zapisywane na specjalnych kartridżach zawierających pamięci ROM. Posiada wyjścia dla dwóch kontrolerów oraz drukarki. Może być podłączony do telewizora przez wejście antenowe lub przez złącze Cinch audio-video."
+    },
+    {
+    "title": "Gra telewizyjna",  
+    "subtitle": "Firmy General Instruments",
+    "extras": [
+      ["oparta na układzie AY-3-8500"]
+    ],
+    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Zestaw_do_gier_telewizyjnych.png"],
+    "description": "Zawierała cztery tryby rozgrywki: Ping-Pong, Hokej, Squash, Trening solo. Przy użyciu specjalnego pistoletu fotoelektrycznego można było strzelać do ruchomego celu na ekranie. Wymagała podłączenia dwóch specjalnych kontrolerów. Podłączenie do telewizora odbywało się za pomocą  systemu PAL."
+  },
+  {
+    "title": "Macintosh Classic",
+    "subtitle": "Firmy Apple",
+    "extras": [
+      ["Koszt poniżej 1000$"]
+    ],
+    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Macintosh-Classic.png","https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Macintosh_etykieta.png","https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Macintosh_dyskietki_%C4%87wiczenia.png"],
+    "description": "Posiadał procesor o taktowaniu 8MHz oraz pamięć RAM 1MB-4MB. Był również wyposażony w 9-calowy monitor o rodzielczości 512x342. Komputer radził sobie doskonale z lokalnymi sieciami przez co był często wykorzystywany w pracowniach komputerowych. Od marca 1922 r. był dostępny na rynku polskim."
+  },
+  {
+    "title": "Magnetofon",  
+    "subtitle": "MK 433 firmy Unitra",
+    "extras": [],
+    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Magnetofon-kasetowy-no%C5%9Bnik-danych.png"],
+    "description": "Umożliwiał zapis i odczyt danych na zwykłych kasetach magnetofonowych audio. Stosowany jako pamięć zewnętrzna w mikrokomputerach domowych."
+  },
+  {
+    "title": "Komputer MEGA/STE",  
+    "subtitle": "Firmy Atari",
+    "extras": [
+      ["Premiera w 1991 r."]
+    ],
+    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Atari.png"],
+    "description": "Był wyposażony w procesor o taktowaniu 8-16MHz oraz 1MB-4MB pamięci RAM. Atari MEGA/STE posiadał również wbudowany dysk o pojemności 40MB oraz złącze MIDI, które było wykorzystywane do komunikacji z różnymi urządzeniami muzycznymi. Dzięki temu zyskał ogromną popularność wśród profesjonalnych muzyków."
+  },
+  {
+    "title": "Test",  
+    "subtitle": "test2",
+    "extras": [
+      ["częstotliwość procesora - 3,5MHz", "asdf"],
+      ["cośtam ","RAM 16-48KB"]
+    ],
+    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/zx_spectrum.png", "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/minisys_286.png", "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/stacja_dyskietek_35.png"],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper suscipit nisl, nec lacinia felis finibus vel. Ut sit amet pretium magna, sed aliquam diam. Pellentesque elementum ac augue vitae imperdiet. Vivamus rhoncus justo risus, et elementum ipsum pretium sit amet. Suspendisse potenti. Morbi vestibulum euismod massa, sit amet pretium nibh sodales at. Maecenas at fermentum arcu, eget euismod turpis. \n Quisque id aliquet velit. Praesent ut sapien id massa tempus gravida ac id ipsum. Maecenas pellentesque volutpat suscipit. Fusce sodales vel augue at maximus. Cras congue nunc bibendum, rutrum lorem sed, convallis ante. Integer tincidunt est est, nec placerat risus mollis ac. Duis sit amet tristique quam. Vivamus id diam quis mi tristique tincidunt vel vel ipsum. Vivamus pretium lectus lorem, id lacinia nulla mollis eget. Praesent a arcu metus. Aliquam elementum leo in porttitor vulputate. Donec eget molestie diam. In et facilisis diam, non scelerisque justo."
+  }
+]

@@ -1,0 +1,10 @@
+,
+  {
+    "title": "Stacja dyskietek",
+    "subtitle": "5,25 cala FDD firmy TEAC",
+    "extras": [
+      ["Produkowano w latach 1967-1980", "79,7kB"]
+    ],
+    "image": "./exhibits/.png",
+    "description": "Odczytywała dyskietki 5,25” o pojemności początkowo 180 kB później 360 kB DD(Double Density). Pierwsza stacja dyskietek 5,25” opracowana przez firmę Shugart w 1976 r miała pojemność 87,5 kB. Zastąpiła stosowane wcześniej stacje dyskietek 8”(cali).Używa złącza krawędziowego typu ISA."
+  }
