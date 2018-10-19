@@ -35,16 +35,16 @@ export default {
     components: {
       imageCarousel
     },
-    computed: {
-      current () {
-        return this.retrozbiory[this.currentModal]
+    data () {
+      return {
+        current: this.retrozbiory[this.currentModal]
       }
     },
-    // watch: {
-    //   currentModal() {
-    //     this.current = this.retrozbiory[this.currentModal]
-    //   }
-    // },
+    watch: {
+      currentModal() {
+        this.current = this.retrozbiory[this.currentModal]
+      }
+    },
     methods: {
       closeModal() {
         this.$emit('close')
@@ -53,7 +53,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus">
 .item-extras {
   margin-left: 40px;
 }
