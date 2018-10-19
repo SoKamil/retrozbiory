@@ -35,14 +35,9 @@ export default {
     components: {
       imageCarousel
     },
-    data () {
-      return {
-        current: this.retrozbiory[this.currentModal]
-      }
-    },
-    watch: {
-      currentModal() {
-        this.current = this.retrozbiory[this.currentModal]
+    computed: {
+      current () {
+        return this.retrozbiory[this.currentModal]
       }
     },
     methods: {
