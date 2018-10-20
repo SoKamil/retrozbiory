@@ -1,9 +1,9 @@
 <template>
   <transition name="modal">
-    <div class="modal-mask" >
+    <div class="modal-mask">
       <div class="modal-wrapper">
-        <div v-on-clickaway="closeModal" class="modal-container" ref="modal">
-          <div class="top-item-container">
+        <div class="modal-container" v-on-clickaway="closeModal" ref="modal">
+          <div class="item-header-container">
             <div class="item-title">{{current.title}}</div>
             <div class="item-subtitle">{{current.subtitle}}</div>
           </div>
@@ -49,88 +49,10 @@ export default {
 </script>
 
 <style lang="stylus">
-// @font-face {
-//     font-family: 'Bahnschrift'
-//     src:url('https://github.com/SockoKamil/zamiana/raw/master/docs/fonts/bahnschrift.ttf') format('truetype')
-// }
-
-.item-extras {
-  margin-left: 40px
-}
-
-.extras-line {
-  border-bottom: 7px solid #FFFFFF
-}
-.extras-item {
-  padding: 10px
-  display: inline-block
-}
-
-.extras-item:not(:last-child) {
-  border-right: 7px solid #FFFFFF
-}
-
-.item-extras-container {
-  border-top: 7px solid #FFFFFF
-  font-size: 17px
-}
-
-.modal-container {
-  width: 970px
-  height: 645px
-  margin: 0px auto
-  /* padding: 20px 30px; */
-  background-color: #808080
-  color: #fefefe
-  /* border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .33); */
-  transition: all .3s ease
-  font-family: Bahnschrift
-  display: flex
-  justify-content: center
-  align-items: center
-  flex-flow: column
-}
-
-.item-title { 
-  font-size: 39px
-  font-weight: bold
-  font-stretch: condensed
-  text-transform: uppercase
-}
-
-.item-subtitle {
-  font-size: 39px
-  /* font-weight: bold; */
-  font-stretch: condensed
-}
-
-.top-item-container { 
-  width: 840px
-  line-height: 50px
-}
-
-.item-container {
-  width: 840px
-  height: 400px
-  margin: 0 auto
-}
-
-.item-extras-container {
-  float: right
-  width: 440px
-}
-
-.item-description {
-  text-align: justify
-  float: right
-  width: 400px
-  box-sizing: border-box
-  font-stretch: condensed
-  font-size: 17px
-  white-space: pre-line
-  margin-top: 20px
-}
+/* @font-face {
+    font-family: 'Bahnschrift'
+    src:url('https://github.com/SockoKamil/zamiana/raw/master/docs/fonts/bahnschrift.ttf') format('truetype')
+} */
 
 .modal-mask {
   position: fixed
@@ -139,23 +61,96 @@ export default {
   left: 0
   width: 100%
   height: 100%
-  background-color: rgba(0, 0, 0, .3)
+  background-color: rgba(0, 0, 0, .35)
   display: table
   transition: opacity .3s ease
+
+  .modal-wrapper {
+    display: table-cell
+    vertical-align: middle
+
+    .modal-container {
+      width: 970px
+      height: 645px
+      margin: 0px auto
+      /* padding: 20px 30px; */
+      background-color: #808080
+      color: #fefefe
+      /* border-radius: 2px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .33); */
+      transition: all .3s ease
+      font-family: Bahnschrift
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-flow: column
+
+      .item-header-container { 
+        width: 840px
+        line-height: 50px
+
+        .item-title { 
+          font-size: 39px
+          font-weight: bold
+          font-stretch: condensed
+          text-transform: uppercase
+        }
+
+        .item-subtitle {
+          font-size: 39px
+          /* font-weight: bold; */
+          font-stretch: condensed
+        }
+      }
+      .item-container {
+        width: 840px
+        height: 400px
+        margin: 0 auto
+
+        .item-extras-container {
+          border-top: 7px solid #FFFFFF
+          font-size: 17px
+          float: right
+          width: 440px
+
+          .item-extras {
+            margin-left: 40px
+
+            .extras-line {
+              border-bottom: 7px solid #FFFFFF
+
+              .extras-item {
+                padding: 10px
+                display: inline-block
+              }
+              .extras-item:not(:last-child) {
+                border-right: 7px solid #FFFFFF
+              }
+            }
+          }
+        }
+        .item-description {
+          text-align: justify
+          float: right
+          width: 400px
+          box-sizing: border-box
+          font-stretch: condensed
+          font-size: 17px
+          white-space: pre-line
+          margin-top: 20px
+        }
+      }
+    }
+  }
 }
 
-.modal-wrapper
-  display: table-cell
-  vertical-align: middle
 
 .modal-enter {
   opacity: 0
 }
-
 .modal-leave-active {
   opacity: 0
 }
-
 .modal-enter .modal-container,
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1)
