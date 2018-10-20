@@ -10,6 +10,7 @@
   "dependencies": {
     "vue": "^2.5.17",
     "vue-clickaway": "^2.2.2",
+    "vue-image-preloader": "^0.2.6",
     "vue-masonry": "^0.11.6"
   },
   "devDependencies": {

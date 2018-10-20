@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-      <div class="masonry" v-masonry transition-duration="0" item-selector=".shelfItem">
-        <shelf-item v-masonry-tile v-for="(item, index) in retrozbiory" :key="index" :tooltip="item.title" :thumbnail="item.images[0]" @click.native="openItemModal(index)"></shelf-item>
-      </div>
-      <modal v-if="showModal" @close="showModal = false" :retrozbiory="retrozbiory" :currentModal="currentModal"/>
+    <image-preloader :srcs="getAllImagesArray()" @loaded="loadedOne" @loaded-all="preloadedAllImages"/>
+    <div class="masonry" v-if="imagesPreloaded" v-masonry transition-duration="0" item-selector=".shelfItem">
+      <shelf-item v-masonry-tile v-for="(item, index) in retrozbiory" :key="index" :tooltip="item.title" :thumbnail="item.images[0]" @click.native="openItemModal(index)"></shelf-item>
+    </div>
+    <modal v-if="showModal" @close="showModal = false" :retrozbiory="retrozbiory" :currentModal="currentModal"/>
   </div>
 </template>
 
@@ -21,8 +22,9 @@ export default {
   },
   data () {
     return {
-      showModal: false,
       currentModal: null,
+      imagesPreloaded: false,
+      showModal: false,
       retrozbiory: retrozbiory
     }
   },
@@ -32,13 +34,25 @@ export default {
     openItemModal (id) {
       this.currentModal = id
       this.showModal = true
+    },
+    loadedOne (e) {
+      console.log('loaded one',e)
+    },
+    preloadedAllImages () {
+      this.imagesPreloaded = true
+    },
+    getAllImagesArray () {
+      let buffer = []
+      for (let item of this.retrozbiory) {
+        let imagesArray = item.images
+        // console.log(imagesArray)
+        buffer.push(...imagesArray)
+      }
+      return buffer
     }
   }
 }
 </script>
 
-<style>
-#app {
-  /* background-color: #eee; */
-}
+<style lang="stylus">
 </style>
