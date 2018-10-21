@@ -64,6 +64,57 @@ export default {
     src:url('https://github.com/SockoKamil/zamiana/raw/master/docs/fonts/bahnschrift.ttf') format('truetype')
 } */
 
+// @media screen and (max-width: 900px) {
+//   .modal-container {
+//     margin-left: 20px !important
+//     margin-right: 20px !important
+//   }
+// }
+
+@media only screen and (max-width : 850px){
+  .modal-container {
+    height: calc(100vh - 89px)!important
+    width: 88vw!important
+    overflow-y: auto
+  }
+
+  .item-container {
+    justify-content: center!important
+    width: 100%!important
+    height: 100%!important
+
+    >div {
+      width: 90%!important
+    }
+  }
+
+  .logo-stamp {
+    top: 10px!important
+    right: 10px!important
+  }
+
+  .item-header-container {
+    margin-top: 25px
+  }
+  .item-description {
+    margin-bottom: 25px
+  }
+
+  .item-image-container {
+    // height: 300px !important
+  }
+
+  .item-info-container {
+    padding-left: 0 !important
+    margin-top: 20px
+    height: auto !important
+    // display: none !important
+  }
+  .item-description {
+    width: 100%!important
+  }
+}
+
 .modal-mask {
   position: fixed
   z-index: 100000
@@ -124,7 +175,7 @@ export default {
         .item-header-container { 
           // width: 100%
           line-height: 50px
-          flex-basis: 100%
+          width: 100%
 
           .item-title { 
             font-size: 39px
@@ -141,7 +192,7 @@ export default {
         }
         .item-image-container {
           width: 400px
-          height: 400px
+          // height: 400px
           // background-image: url('../assets/images/img-container-border.png')
           display:flex
           justify-content:center
@@ -158,8 +209,8 @@ export default {
 
           .border-corner {
             content: ''
-            width: 128px
-            height: 128px
+            width: 32%
+            height: 32%
             // background-color: #000
             position: absolute
             pointer-events: none
@@ -177,7 +228,6 @@ export default {
             right: 0
             border-top: 7px solid #fefefe
             border-right: 7px solid #fefefe
-            padding-left: 10px
           }
           .bottom-left-corner {
             bottom: 0
