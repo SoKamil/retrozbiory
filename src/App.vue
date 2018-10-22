@@ -3,8 +3,8 @@
     <image-preloader :srcs="getAllImagesArray()" @loaded="loadedOne" @loaded-all="preloadedAllImages"/>
     <transition name="fade">
       <while-loading v-if="!imagesPreloaded" :progress="preloadingProgress"/>
-      <div class="masonry" v-if="imagesPreloaded" v-masonry transition-duration="0" item-selector=".shelfItem">
-        <shelf-item v-masonry-tile v-for="(item, index) in retrozbiory" :key="index" :tooltip="item.title" :thumbnail="item.images[0]" @click.native="openItemModal(index)"></shelf-item>
+      <div id="shelf-item-container" v-if="imagesPreloaded">
+        <shelf-item v-for="(item, index) in retrozbiory" :key="index" :tooltip="item.title" :thumbnail="item.images[0]" @click.native="openItemModal(index)"></shelf-item>
       </div>
     </transition>
     <modal v-if="showModal" @close="showModal = false" :retrozbiory="retrozbiory" :currentModal="currentModal"/>
