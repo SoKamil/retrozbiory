@@ -20,7 +20,7 @@ export default {
 .shelfItem {
     cursor:pointer;
     margin: 5px;
-    background-color: #eee;
+    background-color: #f5f5f5;
     width:142px;
     border-radius: 8px;
 }
