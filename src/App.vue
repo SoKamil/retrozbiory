@@ -1,16 +1,46 @@
 <template>
   <div id="app">
     <image-preloader :srcs="getAllImagesArray()" @loaded="loadedOne" @loaded-all="preloadedAllImages"/>
-    <transition name="fade">
-      <while-loading v-if="!imagesPreloaded" :progress="preloadingProgress"/>
-      <div id="shelf-item-container" v-if="imagesPreloaded">
-        <shelf-item v-for="(item, index) in retrozbiory" :key="index" :tooltip="item.title" :thumbnail="item.images[0]" @click.native="openItemModal(index)"></shelf-item>
-      </div>
-    </transition>
+    <div class="shelf-item-container" :class="{'while-loading' : !imagesPreloaded}">
+        <while-loading v-if="!imagesPreloaded" :progress="preloadingProgress"/>
+        <shelf-item :class="{'hideItem':!imagesPreloaded}" v-for="(item, index) in retrozbiory" :key="index" :tooltip="item.title" :thumbnail="item.images[0]" @click.native="openItemModal(index)"></shelf-item>
+    </div>
     <modal v-if="showModal" @close="showModal = false" :retrozbiory="retrozbiory" :currentModal="currentModal"/>
   </div>
 </template>
-
+<style lang="stylus">
+  #app {
+  }
+  
+  .while-loading {
+    position: relative
+    cursor: wait
+  }
+  
+  .hideItem {
+    visibility: hidden
+    pointer-events: none
+  }
+  
+  .ps:hover>.ps__scrollbar-y-rail:hover {
+      background-color: #7b7b7b;
+      opacity: .9;
+  }
+  
+  .fade-enter-active {
+    // position: absolute;
+  }
+  .fade-leave-active {
+      position: absolute;
+  }
+  
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+</style>
 <script>
 import modal from './components/modal.vue'
 import shelfItem from './components/shelfItem.vue'
@@ -59,24 +89,3 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-#app {
-  position: relative
-}
-
-#whileLoading {
-  position: absolute
-}
-
-.ps:hover>.ps__scrollbar-y-rail:hover {
-    background-color: #7b7b7b;
-    opacity: .9;
-}
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-</style>

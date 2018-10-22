@@ -1,29 +1,21 @@
 <template>
-  <div id="whileLoading">
-    <transition name="fade">
-        <div class="progress-container" v-if="progress != 0">
+        <div class="progress-container">
             <div class="progress" v-bind:style="{width: progress + '%'}"></div>
         </div>
-    </transition>
-  </div>
-  </div>
 </template>
 <script>
 export default {
-    props: ['progress'],
+    props: ['progress']
 }
 </script>
 <style lang="stylus">
-#whileLoading {
-    display:flex
-    justify-content:center
-    align-items:center
-    width: 100%
-    height: 500px
-}
 .progress-container {
   width: 100%
   background-color: #eaeaea
+  margin: auto;
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
 }
 .progress {
   background-color: #01afe4
