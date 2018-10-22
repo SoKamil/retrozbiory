@@ -13,7 +13,10 @@
             <div class="item-info-container">
               <div class="item-extras-container">
                   <div class="extras-line" v-for="(line, index) of current.extras" :key="index">
-                    <span class="extras-item" v-for="(item, index) of line" :key="index">{{item}}</span>
+                    <span class="extras-item" v-for="(item, index) of line" :key="index">
+                      <span class="extras-separator" v-if="item == '|'"></span>
+                      <span v-else>{{item}}</span>
+                    </span>
                   </div>
               </div>
               <VuePerfectScrollbar class="item-description" :settings="scrollbarSettings">{{current.description}}</VuePerfectScrollbar>
@@ -289,15 +292,28 @@ export default {
             // margin-left: 40px
 
             .extras-line {
+              height: 43px
               border-bottom: 7px solid #FFFFFF
+              display: flex
+              flex-direction: row
+              flex-wrap: nowrap
+              align-items: center
+              // justify-content: space-evenly
 
               .extras-item {
-                padding: 10px
-                display: inline-block
+                position: relative
+                height: 100%
               }
-              .extras-item:not(:last-child) {
-                border-right: 7px solid #FFFFFF
+              // .extras-item:not(:last-child) {
+              //   border-right: 7px solid #FFFFFF
+              // }
+              .extras-separator {
+                border-right: 7px solid #fff
+                position: absolute
+                height: 100%
               }
+
+
             }
           }
           .item-description {
