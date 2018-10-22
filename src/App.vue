@@ -27,7 +27,6 @@ export default {
   },
   data () {
     return {
-      // additionalImages: [''],
       currentModal: null,
       imagesPreloaded: false,
       preloadingProgress: 0,
@@ -44,7 +43,6 @@ export default {
     },
     loadedOne (e) {
       this.preloadingProgress = e.progress
-      console.log('loaded one',e)
     },
     preloadedAllImages () {
       this.imagesPreloaded = true
@@ -53,7 +51,6 @@ export default {
       let buffer = []
       for (let item of this.retrozbiory) {
         let imagesArray = item.images
-        // console.log(imagesArray)
         buffer.push(...imagesArray)
       }
       return buffer
@@ -69,6 +66,11 @@ export default {
 
 #whileLoading {
   position: absolute
+}
+
+.ps:hover>.ps__scrollbar-y-rail:hover {
+    background-color: #7b7b7b;
+    opacity: .9;
 }
 
 .fade-enter-active, .fade-leave-active {
