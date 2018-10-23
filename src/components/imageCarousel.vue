@@ -34,6 +34,13 @@ export default {
                 active = 0
             }
             this.activateImage(active)
+
+            this.$ga.event({
+                eventCategory: 'carousel',
+                eventAction: 'click',
+                eventLabel: active,
+                eventValue: 4
+            })
         },
         // Go backwards on the images array
         // or go at the last image
@@ -43,6 +50,13 @@ export default {
                 active = this.images.length - 1
             }
             this.activateImage(active)
+
+            this.$ga.event({
+                eventCategory: 'carousel',
+                eventAction: 'click',
+                eventLabel: active,
+                eventValue: 4
+            })
         },
         activateImage(imageIndex) {
             this.activeImage = imageIndex

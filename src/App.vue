@@ -70,12 +70,26 @@ export default {
     openItemModal (id) {
       this.currentModal = id
       this.showModal = true
+
+      this.$ga.event({
+        eventCategory: 'modal',
+        eventAction: 'click',
+        eventLabel: id,
+        eventValue: 2
+      })
     },
     loadedOne (e) {
       this.preloadingProgress = e.progress
     },
     preloadedAllImages () {
       this.imagesPreloaded = true
+
+      this.$ga.event({
+        eventCategory: 'app',
+        eventAction: 'load',
+        eventLabel: 'App initialised',
+        eventValue: 1
+      })
     },
     getAllImagesArray () {
       let buffer = []

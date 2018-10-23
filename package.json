@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "vue": "^2.5.17",
+    "vue-analytics": "^5.16.0",
     "vue-clickaway": "^2.2.2",
     "vue-image-preloader": "^0.2.6",
     "vue-perfect-scrollbar": "^0.1.0"

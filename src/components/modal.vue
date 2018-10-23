@@ -53,7 +53,14 @@ export default {
     },
     methods: {
       closeModal() {
-        this.$emit('close')
+      this.$emit('close')
+
+      this.$ga.event({
+        eventCategory: 'modal_close',
+        eventAction: 'click',
+        eventLabel: 'closed',
+        eventValue: 3
+      })
       }
     }
 }
