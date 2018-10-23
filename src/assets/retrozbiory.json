@@ -1,111 +1,152 @@
 [
   {
-    "title": "Płyta główna",  
+    "title": "Płyta główna",
     "subtitle": "ZX Spectrum",
     "extras": [
-      ["częstotliwość procesora - 3,5MHz", "|", "RAM 16-48KB"]
+      ["częstotliwość procesora - 3,5MHz","|","RAM 16-48KB"]
     ],
-    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/zx_spectrum.png"],
+    "images": [
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/zx_spectrum.png"
+    ],
     "description": "Mikrokomputer domowy opracowany w firmie Sinclair Research. Oparty na 8 bitowym procesorze Zilog Z80A pracującym z częstotliwością 3,5 MHz. Posiadał pamięć operacyjną RAM 16 – 48 kB. Nośnikiem danych była kaseta magnetofonowa. System operacyjny Basic opracowany przez Sinclaira. Obraz był wyświetlany w trybie graficznym w rozdzielczości 256 x 192 pixele w 15 kolorach. Możliwe było podłączenie dżojstika. Powstało wiele klonów tego mikrokomputera."
   },
   {
     "title": "Komputer PC",
     "subtitle": "MiniSys 286",
     "extras": [
-      ["częstotliwość procesora - 12MHz", "|"],
-      ["|", "Pamięć operacyjna - 512kB"]
+      ["częstotliwość procesora - 12MHz","|"],
+      ["|","Pamięć operacyjna - 512kB"]
     ],
-    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/minisys_286.png"],
+    "images": [
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/minisys_286.png"
+    ],
     "description": "Miniaturowa wersja komputera PC XT 286 opartego na mikroprocesorze 16-bitowym Intel 80286. Wyposażony w stację dyskietek 3,5” o pojemności 1,44 MB oraz 3,5” dysk twardy o pojemności od 20 MB. Posiada kartę graficzną VGA pracującą w trybie mono lub kolor."
   },
   {
-    "title": "Stacja dyskietek",  
+    "title": "Stacja dyskietek",
     "subtitle": "3,5 cala FDD firmy ALPS",
     "extras": [
       ["|","produkowane od 1982 r."]
     ],
-    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/stacja_dyskietek_35.png", "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Stacja-dyskietek-35-cala-z%C5%82%C4%85cze.png"],
-    "description":"Do odczytu dyskietek w sztywnej obudowie o pojemności początkowo 280 kB później 720 kB a końcowo 1,44 MB (najczęściej stosowane). Używa złącza IDE 32 piny" 
-  }, 
-   {
-     "title": "Dysk twardy",  
-     "subtitle": "5,25 cala HDD firmy WYSE",
-     "extras": [
+    "images": [
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/stacja_dyskietek_35.png",
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Stacja-dyskietek-35-cala-z%C5%82%C4%85cze.png"
+    ],
+    "description": "Do odczytu dyskietek w sztywnej obudowie o pojemności początkowo 280 kB później 720 kB a końcowo 1,44 MB (najczęściej stosowane). Używa złącza IDE 32 piny."
+  },
+  {
+    "title": "Dysk twardy",
+    "subtitle": "5,25 cala HDD firmy WYSE",
+    "extras": [
       [" "," "," ","|","pojemność - 45MB"]
     ],
-    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/dysk_twardy_525.png"],
-    "description": "Dysk typu ST-251. Prędkość obrotowa 3600 rpm, 6-cio głowicowy. Złącze krawędziowe ISA"
-    }, 
-    {
-      "title": "Kaseta danych ",  
-      "subtitle": "Firmy Sony",
-      "extras": [
-        [" ", " ","pojemność - 60MB", "|"]
-      ],
-      "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/kaseta_sony.png"],
-      "description": "Nośnik danych na taśmie magnetycznej 0,25” o długości 183 m. Kaseta metalowo-plastikowa. Do zapisu i odczytu wymagała specjalnej stacji zwanej streamerem danych."
-    },
-    {
-      "title": "Kalkulator biurowy z drukarką",  
-      "subtitle": "Firmy Citizen",
-      "extras": [
-        ["wykonuje 4 podstawowe typy działań", "|"],
-        ["|", "Pamięć operacyjna - 512kB"]
-      ],
-      "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/kalkulator_citizen.png"],
-      "description": "Kalkulator posiada 12-to pozycyjny wyświetlacz fluorescencyjny (VFD). To urządzenie jest w stanie wykonać 4 podstawowe typy działań oraz ma możliwość ustawiania dokładności obliczeń od 2-4 miejsc po przecinku."
-    },
-    {
-      "title": "Mikrokomputer domowy M5",  
-      "subtitle": "Firmy CGL",
-      "extras": [
-        ["Japoński klon ZX Spectrum", "|"]
-      ],
-      "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Mikrokomputer-M5.png", "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/mikrokomputer_M5_kartridz.png"],
-      "description": "Programy i gry były zapisywane na specjalnych kartridżach zawierających pamięci ROM. Posiada wyjścia dla dwóch kontrolerów oraz drukarki. Może być podłączony do telewizora przez wejście antenowe lub przez złącze Cinch audio-video."
-    },
-    {
-    "title": "Gra telewizyjna",  
+    "images": [
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/dysk_twardy_525.png"
+    ],
+    "description": "Dysk typu ST-251. Prędkość obrotowa 3600 rpm, 6-cio głowicowy. Złącze krawędziowe ISA."
+  },
+  {
+    "title": "Kaseta danych ",
+    "subtitle": "Firmy Sony",
+    "extras": [
+      [" "," ","pojemność - 60MB","|"]
+    ],
+    "images": [
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/kaseta_sony.png"
+    ],
+    "description": "Nośnik danych na taśmie magnetycznej 0,25” o długości 183 m. Kaseta metalowo-plastikowa. Do zapisu i odczytu wymagała specjalnej stacji zwanej streamerem danych."
+  },
+  {
+    "title": "Kalkulator biurowy z drukarką",
+    "subtitle": "Firmy Citizen",
+    "extras": [
+      ["wykonuje 4 podstawowe typy działań","|"],
+      ["|","Pamięć operacyjna - 512kB"]
+    ],
+    "images": [
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/kalkulator_citizen.png"
+    ],
+    "description": "Kalkulator posiada 12-to pozycyjny wyświetlacz fluorescencyjny (VFD). To urządzenie jest w stanie wykonać 4 podstawowe typy działań oraz ma możliwość ustawiania dokładności obliczeń od 2-4 miejsc po przecinku."
+  },
+  {
+    "title": "Mikrokomputer domowy M5",
+    "subtitle": "Firmy CGL",
+    "extras": [
+      ["Japoński klon ZX Spectrum","|"]
+    ],
+    "images": [
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Mikrokomputer-M5.png",
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/mikrokomputer_M5_kartridz.png"
+    ],
+    "description": "Programy i gry były zapisywane na specjalnych kartridżach zawierających pamięci ROM. Posiada wyjścia dla dwóch kontrolerów oraz drukarki. Może być podłączony do telewizora przez wejście antenowe lub przez złącze Cinch audio-video."
+  },
+  {
+    "title": "Stacja dyskietek",
+    "subtitle": "5,25 cala FDD firmy TEAC",
+    "extras": [
+      ["używa złącza ISA", "|"]
+    ],
+    "images": [
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Stacja-dyskietek-525-cala.png"
+    ],
+    "description": "Odczytywała dyskietki 5,25” o pojemności początkowo 180 kB później 360 kB DD (Double Density). Pierwszy model tej stacji o pojemności 87,5kB został opracowany przez firmę Shugart. Zastąpiła stosowane wcześniej stacje dyskietek 8”. Używa złącza krawędziowego typu ISA."
+  },
+  {
+    "title": "Gra telewizyjna",
     "subtitle": "Firmy General Instruments",
     "extras": [
-      ["|","oparta na układzie AY-3-8500", " "]
+      ["|","oparta na układzie AY-3-8500"," "]
     ],
-    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Zestaw_do_gier_telewizyjnych.png"],
+    "images": [
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Zestaw_do_gier_telewizyjnych.png"
+    ],
     "description": "Zawierała cztery tryby rozgrywki: Ping-Pong, Hokej, Squash, Trening solo. Przy użyciu specjalnego pistoletu fotoelektrycznego można było strzelać do ruchomego celu na ekranie. Wymagała podłączenia dwóch specjalnych kontrolerów. Podłączenie do telewizora odbywało się za pomocą  systemu PAL."
   },
   {
     "title": "Macintosh Classic",
     "subtitle": "Firmy Apple",
     "extras": [
-      ["|","Koszt poniżej 1000$", "|"]
+      ["|", "Koszt poniżej 1000$","|"]
     ],
-    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Macintosh-Classic.png","https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Macintosh_etykieta.png","https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Macintosh_dyskietki_%C4%87wiczenia.png"],
+    "images": [
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Macintosh-Classic.png",
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Macintosh_etykieta.png",
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Macintosh_dyskietki_%C4%87wiczenia.png"
+    ],
     "description": "Posiadał procesor o taktowaniu 8MHz oraz pamięć RAM 1MB-4MB. Był również wyposażony w 9-calowy monitor o rodzielczości 512x342 piksele. Komputer radził sobie doskonale z lokalnymi sieciami przez co był często wykorzystywany w pracowniach komputerowych. Od marca 1992 r. był dostępny na rynku polskim."
   },
   {
-    "title": "Magnetofon",  
+    "title": "Magnetofon",
     "subtitle": "MK 433 firmy Unitra",
     "extras": [],
-    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Magnetofon-kasetowy-no%C5%9Bnik-danych.png"],
+    "images": [
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Magnetofon-kasetowy-no%C5%9Bnik-danych.png"
+    ],
     "description": "Umożliwiał zapis i odczyt danych na zwykłych kasetach magnetofonowych audio. Stosowany jako pamięć zewnętrzna w mikrokomputerach domowych."
   },
   {
-    "title": "Komputer MEGA/STE",  
+    "title": "Komputer MEGA/STE",
     "subtitle": "Firmy Atari",
     "extras": [
-      ["|", "Premiera w 1991 r."]
+      ["|","Premiera w 1991 r."]
     ],
-    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Atari.png"],
+    "images": [
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/Atari.png"
+    ],
     "description": "Komputer który swoją premierę miał w 1991 r. był wyposażony w procesor o taktowaniu 8-16MHz oraz 1MB-4MB pamięci RAM. Atari MEGA/STE posiadał również wbudowany dysk twardy o pojemności 40MB oraz złącze MIDI, które było wykorzystywane do komunikacji z różnymi urządzeniami muzycznymi. Dzięki temu zyskał ogromną popularność wśród profesjonalnych muzyków."
   },
   {
-    "title": "Komputer - Składak",  
+    "title": "Komputer - Składak",
     "subtitle": "Złożony przez uczniów 2ti",
     "extras": [
-      ["|", "karta graficzna o taktowaniu 166/333 Mhz"],
-      [" ","obudowa MIDI ATX"," "," ", "|"]
+      ["|","karta graficzna o taktowaniu 166/333 Mhz"],
+      [" ","obudowa MIDI ATX"," "," ","|"]
     ],
-    "images": ["https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/retro-skladak1.png", "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/retro-skladak2.png", "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/retro-skladak3.png"],
+    "images": [
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/retro-skladak1.png",
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/retro-skladak2.png",
+      "https://www.zs1piaseczno.pl/nextgen-image/retrozbiory/retro-skladak3.png"
+    ],
     "description": "Na płycie głównej w standardzie ATX znajduje się jednordzeniowy procesor o taktowaniu 300Mhz oraz jedna kość pamięci RAM pracująca w częstotliwości 133Mhz. W obudowie znajdziemy również napęd optyczny oraz dysk twardy o pojemności 2GB. A to wszystko zarządzane jest przez system operacyjny Windows 98."
   }
 ]
