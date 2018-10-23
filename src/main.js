@@ -5,7 +5,8 @@ import imagePreloader from 'vue-image-preloader'
 Vue.use(imagePreloader)
 
 Vue.config.productionTip = false
+Vue.config.devtools = true
 
 new Vue({
   render: h => h(App)
-}).$mount('#retro-app')
+}).$mount('#retrozbiory-app')
